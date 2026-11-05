@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Recording and Podcast Studio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <input type="checkbox" id="theme-toggle" class="sr-only">
+  <input type="checkbox" id="burger-toggle" class="sr-only">
+
+  <header class="site-header">
+    <a class="logo" href="#top" aria-label="Studio home">
+      <svg viewBox="0 0 64 32" class="logo-icon" aria-hidden="true">
+        <path d="M2 16h6M12 8v16M20 3v26M28 10v12M36 6v20M44 12v8M52 4v24M60 16h2" stroke="currentColor" stroke-width="3" stroke-linecap="round" fill="none"/>
+      </svg>
+      <span>Wavehouse</span>
+    </a>
+    <label for="burger-toggle" class="burger" aria-label="Open menu"><span></span></label>
+    <nav class="main-nav" aria-label="Main">
+      <a href="#equipment">Equipment</a>
+      <a href="#services">Services</a>
+      <a href="#prices">Prices</a>
+      <a href="#works">Our Works</a>
+      <a class="phone" href="tel:+77010000000">+7 701 000 00 00</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <h1>Crystal Clear Sound for Your Music and Podcasts</h1>
+      <p>Treated vocal booth, live room and a mixing desk, ready when you are.</p>
+      <a class="cta" href="#booking">Book Studio Time</a>
+    </section>
+
+    <section id="services" class="services">
+      <h2>Services</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Vocal Recording</h3>
+          <p>Neumann U87 into a Neve preamp, in a treated booth.</p>
+          <p class="price">8 000 KZT / hour</p>
+        </article>
+        <article class="card">
+          <h3>Track Mixing</h3>
+          <p>Stems in, finished stereo mix out, two revision rounds.</p>
+          <p class="price">12 000 KZT / hour</p>
+        </article>
+        <article class="card">
+          <h3>Turnkey Podcast</h3>
+          <p>Recording, editing, noise removal and export for every platform.</p>
+          <p class="price">15 000 KZT / hour</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="equipment" class="info">
+      <h2>Equipment</h2>
+      <p>Neumann U87, Shure SM7B, Neve 1073 preamps, Genelec 8040 monitors, Universal Audio Apollo interface.</p>
+    </section>
+
+    <section id="prices" class="info">
+      <h2>Prices</h2>
+      <p>Hourly rates are listed above. Sound engineer: +3 000 KZT per hour. Evening sessions after 22:00 cost 20% more.</p>
+    </section>
+
+    <section id="works" class="info">
+      <h2>Our Works</h2>
+      <p>Over 120 tracks and 40 podcast series recorded since 2019.</p>
+    </section>
+
+    <section id="booking" class="booking">
+      <h2>Book studio time</h2>
+      <form action="#" method="post">
+        <label>Name
+          <input type="text" name="name" required minlength="2" autocomplete="name">
+        </label>
+        <label>Phone
+          <input type="tel" name="phone" required pattern="[0-9+ ()\-]{10,}" autocomplete="tel" placeholder="+7 701 000 00 00">
+        </label>
+        <label>Email
+          <input type="email" name="email" required autocomplete="email">
+        </label>
+        <label>Date
+          <input type="date" name="date" required>
+        </label>
+        <label>Session duration (hours)
+          <input type="number" name="duration" min="1" max="12" value="2" required>
+        </label>
+        <label class="check">
+          <input type="checkbox" name="engineer">
+          Hire a sound engineer
+        </label>
+        <button type="submit">Send booking request</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <nav aria-label="Footer">
+      <a href="#">Streaming releases</a>
+      <a href="#">Instagram</a>
+      <a href="#">YouTube</a>
+      <a href="#">Telegram</a>
+    </nav>
+    <p class="legal">&copy; 2026 Wavehouse Studio. All rights reserved. Privacy policy.</p>
+    <label for="theme-toggle" class="theme-btn">Switch theme</label>
+  </footer>
+</body>
+</html>
